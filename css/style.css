@@ -9,8 +9,10 @@ body {
 }
 
 .container {
-  margin: 0;
-  padding: 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
 }
 
 @font-face {
@@ -70,7 +72,7 @@ body {
   align-items: center;
   padding: 20px 50px;
   background-color: transparent;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -259,7 +261,8 @@ body {
   pointer-events: none;
 }
 
-.slide:has(img)::after {
+.slide:has(img)::after,
+.slide:has(video)::after {
   content: "";
   position: absolute;
   top: 0;

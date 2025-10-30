@@ -651,6 +651,7 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
+  min-height: 350px;
 }
 
 .slider-testimonials {
@@ -743,7 +744,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 960px;
-  height: 855px;
+  height: 941px;
   margin: 0 auto;
 }
 
@@ -753,6 +754,7 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
 }
 
 .bento-item:hover {
@@ -766,52 +768,52 @@ body {
   display: block;
 }
 
-/* 1. Massagem - 241x281 */
+/* 1. Massagem - 266x310 */
 .bento-item:nth-child(1) {
-  width: 241px;
-  height: 281px;
+  width: 266px;
+  height: 310px;
   left: 0;
   top: 0;
 }
 
-/* 2. Empresa - 241x202 */
+/* 2. Empresa - 266x223 */
 .bento-item:nth-child(2) {
-  width: 241px;
-  height: 202px;
+  width: 266px;
+  height: 223px;
   left: 0;
-  top: 306px;
+  top: 337px;
 }
 
-/* 3. Acesso Elevador - 241x321 */
+/* 3. Acesso Elevador - 266x260 */
 .bento-item:nth-child(3) {
-  width: 241px;
-  height: 321px;
+  width: 266px;
+  height: 260px;
   left: 0;
-  top: 534px;
+  top: 587px;
 }
 
-/* 4. Sala de Treino - 675x398 (DESTAQUE) */
+/* 4. Sala de Treino - 650x383 (DESTAQUE) */
 .bento-item:nth-child(4) {
-  width: 675px;
-  height: 398px;
+  width: 650px;
+  height: 383px;
   left: 290px;
-  top: 457px;
+  top: 440px;
 }
 
-/* 5. Sala de Espera - 359x451 - alinhada por baixo com Acupuntura */
+/* 5. Sala de Espera - 345x434 - alinhada por baixo com Acupuntura */
 .bento-item:nth-child(5) {
-  width: 359px;
-  height: 451px;
+  width: 345px;
+  height: 434px;
   left: 290px;
-  top: -23px;
+  top: -22px;
 }
 
-/* 6. Acupuntura - 285x379 */
+/* 6. Acupuntura - 275x365 */
 .bento-item:nth-child(6) {
-  width: 285px;
-  height: 379px;
-  left: 675px;
-  top: 49px;
+  width: 275px;
+  height: 365px;
+  left: 660px;
+  top: 47px;
 }
 
 .bento-large {

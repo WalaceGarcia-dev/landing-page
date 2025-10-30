@@ -1,0 +1,294 @@
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .nav-left,
+  .nav-right {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .btn-agendar {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .slider-dots {
+    bottom: 20px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slide-title {
+    font-size: 40px;
+  }
+
+  .btn-saiba-mais {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+
+  .sobre-nos {
+    padding: 80px 40px;
+  }
+
+  .sobre-nos-title {
+    font-size: 40px;
+  }
+
+  .sobre-nos-text {
+    font-size: 16px;
+  }
+
+  /* Nossos Serviços - Tablet */
+  .servicos-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .servicos-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .servico-item {
+    min-width: calc((100% - 40px) / 3);
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .slider {
+    height: 100vh;
+  }
+
+  .slider-dots {
+    bottom: 15px;
+    gap: 10px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .mobile-link {
+    font-size: 18px;
+  }
+
+  .slide-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .btn-saiba-mais {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .sobre-nos {
+    padding: 60px 20px;
+  }
+
+  .sobre-nos-label {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  .sobre-nos-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .sobre-nos-text {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .sobre-nos-text br {
+    display: none;
+  }
+
+  /* Nossos Serviços - Mobile */
+  .nossos-servicos {
+    padding: 60px 20px;
+  }
+
+  .servicos-header {
+    margin-bottom: 40px;
+  }
+
+  .servicos-title {
+    font-size: 28px;
+  }
+
+  .servicos-text {
+    font-size: 14px;
+  }
+
+  .servicos-text br {
+    display: none;
+  }
+
+  .btn-avaliacao {
+    max-width: 100%;
+    padding: 10px 20px;
+  }
+
+  .servicos-dots {
+    margin-bottom: 30px;
+  }
+
+  .servico-item {
+    min-width: calc((100% - 20px) / 2);
+    width: calc((100% - 20px) / 2);
+  }
+
+  .servico-item img {
+    height: 200px;
+  }
+
+  .servico-nome {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile (até 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    height: 35px;
+  }
+
+  .slider-dots {
+    bottom: 10px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .mobile-link {
+    font-size: 16px;
+  }
+
+  .mobile-menu-content {
+    gap: 25px;
+  }
+
+  .mobile-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .slide-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .btn-saiba-mais {
+    padding: 8px 18px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .sobre-nos {
+    padding: 50px 15px;
+  }
+
+  .sobre-nos-title {
+    font-size: 26px;
+  }
+
+  .sobre-nos-text {
+    font-size: 14px;
+  }
+
+  .sobre-nos-scroll svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Nossos Serviços - Small Mobile */
+  .nossos-servicos {
+    padding: 50px 15px;
+  }
+
+  .servicos-title {
+    font-size: 24px;
+  }
+
+  .servicos-text {
+    font-size: 13px;
+  }
+
+  .servico-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .servico-item {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .servico-item img {
+    height: 180px;
+  }
+
+  .servico-nome {
+    font-size: 14px;
+  }
+
+  .servico-link {
+    font-size: 9px;
+  }
+}

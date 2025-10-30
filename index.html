@@ -4,139 +4,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <title>Laura Proença</title>
   </head>
   <body>
     <div class="container">
-    <header class="header">
-      <!-- Menu Hamburguer (Mobile) -->
-      <button class="menu-toggle" aria-label="Menu">
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-        <span class="menu-bar"></span>
-      </button>
+      <header class="header">
+        <!-- Menu Hamburguer (Mobile) -->
+        <button class="menu-toggle" aria-label="Menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
 
-      <nav class="nav-left">
-        <a href="#home" class="nav-link active">Quem somos</a>
-        <a href="#sobre" class="nav-link">Especialidades</a>
-        <a href="#servicos" class="nav-link">Depoimentos</a>
-      </nav>
+        <nav class="nav-left">
+          <a href="#home" class="nav-link active">Quem somos</a>
+          <a href="#sobre" class="nav-link">Especialidades</a>
+          <a href="#servicos" class="nav-link">Depoimentos</a>
+        </nav>
 
-      <div class="logo-container">
-        <img
-          src="./assets/logo/Logo_Simples.png"
-          alt="Laura Proença"
-          class="logo"
-        />
-      </div>
-
-      <nav class="nav-right">
-        <a href="#contato" class="nav-link">Galeria</a>
-        <a href="#blog" class="nav-link">Artigos & Entrevistas</a>
-        <a href="#agendar" class="btn-agendar">Agende sua consulta</a>
-      </nav>
-    </header>
-
-    <!-- Menu Mobile -->
-    <nav class="mobile-menu">
-      <div class="mobile-menu-content">
-        <a href="#home" class="mobile-link">Quem somos</a>
-        <a href="#sobre" class="mobile-link">Especialidades</a>
-        <a href="#servicos" class="mobile-link">Depoimentos</a>
-        <a href="#contato" class="mobile-link">Galeria</a>
-        <a href="#blog" class="mobile-link">Artigos & Entrevistas</a>
-        <a href="#agendar" class="btn-agendar mobile-btn"
-          >Agende sua consulta</a
-        >
-      </div>
-    </nav>
-
-    <!-- Slider -->
-    <section class="slider">
-      <div class="slider-container">
-        <div class="slide active">
-          <img src="./media/banners/banner1.png" alt="Banner 1" />
-          <div class="slide-content">
-            <h1 class="slide-title">
-              Qualidade de Vida começa<br />com um corpo sem dor
-            </h1>
-            <a href="#saiba-mais" class="btn-saiba-mais">Saiba mais</a>
-          </div>
+        <div class="logo-container">
+          <img
+            src="./assets/logo/Logo_Simples.png"
+            alt="Laura Proença"
+            class="logo"
+          />
         </div>
-        <div class="slide">
-          <img src="./media/banners/banner2.png" alt="Banner 2" />
-          <div class="slide-content">
-            <h1 class="slide-title">
-              Qualidade de Vida começa<br />com um corpo sem dor
-            </h1>
-            <a href="#saiba-mais" class="btn-saiba-mais">Saiba mais</a>
-          </div>
-        </div>
-        <div class="slide">
-          <img src="./media/banners/banner3.png" alt="Banner 3" />
-          <div class="slide-content">
-            <h1 class="slide-title">
-              Qualidade de Vida começa<br />com um corpo sem dor
-            </h1>
-            <a href="#saiba-mais" class="btn-saiba-mais">Saiba mais</a>
-          </div>
-        </div>
-        <div class="slide">
-          <video autoplay muted loop playsinline>
-            <source
-              src="./media/banners/6788328_Therapy_Alternative Therapy_1920x1080_1.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-      </div>
 
-      <!-- Dots Navigation -->
-      <div class="slider-dots">
-        <span class="dot active" data-slide="0"></span>
-        <span class="dot" data-slide="1"></span>
-        <span class="dot" data-slide="2"></span>
-        <span class="dot" data-slide="3"></span>
-      </div>
-    </section>
+        <nav class="nav-right">
+          <a href="#contato" class="nav-link">Galeria</a>
+          <a href="#blog" class="nav-link">Artigos & Entrevistas</a>
+          <a href="#agendar" class="btn-agendar">Agende sua consulta</a>
+        </nav>
+      </header>
 
-    <!-- Sobre Nós Section -->
-    <section class="sobre-nos">
-      <div class="sobre-nos-container">
-        <span class="sobre-nos-label">Sobre Nós</span>
-        <h2 class="sobre-nos-title">
-          CONVIDAMOS VOCÊ A VIVER UMA<br />
-          EXPERIÊNCIA MUITO ALÉM DO ALÍVIO
-        </h2>
-        <p class="sobre-nos-text">
-          Totalmente equipada e com equipe de ponta, a clínica oferece o melhor
-          em fisioterapia,<br />
-          reabilitação e fortalecimento em uma das regiões mais nobres de São
-          Paulo.
-        </p>
-        <div class="sobre-nos-scroll">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+      <!-- Menu Mobile -->
+      <nav class="mobile-menu">
+        <div class="mobile-menu-content">
+          <a href="#home" class="mobile-link">Quem somos</a>
+          <a href="#sobre" class="mobile-link">Especialidades</a>
+          <a href="#servicos" class="mobile-link">Depoimentos</a>
+          <a href="#contato" class="mobile-link">Galeria</a>
+          <a href="#blog" class="mobile-link">Artigos & Entrevistas</a>
+          <a href="#agendar" class="btn-agendar mobile-btn"
+            >Agende sua consulta</a
           >
-            <circle cx="25" cy="25" r="24" stroke="#E6CFBE" stroke-width="2" />
-            <path
-              d="M25 15 L25 35 M17 27 L25 35 L33 27"
-              stroke="#E6CFBE"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <script src="./js/slider.js"></script>
-    <script src="./js/menu.js"></script>
+      <!-- Slider -->
+      <section class="slider">
+        <div class="slider-container">
+          <div class="slide active">
+            <img src="./media/banners/banner1.png" alt="Banner 1" />
+            <div class="slide-content">
+              <h1 class="slide-title">
+                Qualidade de Vida começa<br />com um corpo sem dor
+              </h1>
+              <a href="#saiba-mais" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./media/banners/banner2.png" alt="Banner 2" />
+            <div class="slide-content">
+              <h1 class="slide-title">
+                Qualidade de Vida começa<br />com um corpo sem dor
+              </h1>
+              <a href="#saiba-mais" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="./media/banners/banner3.png" alt="Banner 3" />
+            <div class="slide-content">
+              <h1 class="slide-title">
+                Qualidade de Vida começa<br />com um corpo sem dor
+              </h1>
+              <a href="#saiba-mais" class="btn-saiba-mais">Saiba mais</a>
+            </div>
+          </div>
+          <div class="slide">
+            <video autoplay muted loop playsinline>
+              <source
+                src="./media/banners/6788328_Therapy_Alternative Therapy_1920x1080_1.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="slider-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </section>
+
+      <!-- Sobre Nós Section -->
+      <section class="sobre-nos">
+        <div class="sobre-nos-container">
+          <span class="sobre-nos-label">Sobre Nós</span>
+          <h2 class="sobre-nos-title">
+            CONVIDAMOS VOCÊ A VIVER UMA<br />
+            EXPERIÊNCIA MUITO ALÉM DO ALÍVIO
+          </h2>
+          <p class="sobre-nos-text">
+            Totalmente equipada e com equipe de ponta, a clínica oferece o
+            melhor em fisioterapia,<br />
+            reabilitação e fortalecimento em uma das regiões mais nobres de São
+            Paulo.
+          </p>
+          <div class="sobre-nos-scroll">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="25"
+                cy="25"
+                r="24"
+                stroke="#E6CFBE"
+                stroke-width="2"
+              />
+              <path
+                d="M25 15 L25 35 M17 27 L25 35 L33 27"
+                stroke="#E6CFBE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nossos Serviços Section -->
+      <section class="nossos-servicos">
+        <div class="servicos-container">
+          <div class="servicos-header">
+            <div class="servicos-info">
+              <span class="servicos-label">NOSSOS SERVIÇOS</span>
+              <h2 class="servicos-title">
+                Atuação completa para te atender<br />
+                no que seu corpo precisar.
+              </h2>
+              <p class="servicos-text">
+                Oferecemos uma gama de serviços para atender diferentes
+                necessidades<br />
+                do seu corpo, com um cuidado que se adapta à sua rotina, aos
+                seus<br />
+                objetivos e ao momento que você está vivendo
+              </p>
+            </div>
+            <div class="servicos-cta">
+              <a href="#agendar" class="btn-avaliacao">
+                QUERO AGENDAR MINHA<br />
+                <span>AVALIAÇÃO PERSONALIZADA</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dots Navigation -->
+          <div class="servicos-dots">
+            <span class="servico-dot active" data-slide="0"></span>
+            <span class="servico-dot" data-slide="1"></span>
+            <span class="servico-dot" data-slide="2"></span>
+            <span class="servico-dot" data-slide="3"></span>
+            <span class="servico-dot" data-slide="4"></span>
+          </div>
+
+          <div class="servicos-slider-wrapper">
+            <div class="servicos-grid">
+              <div class="servico-item">
+                <img
+                  src="./media/images/Treino Funcional.png"
+                  alt="Treino Funcional"
+                />
+                <h3 class="servico-nome">Treino Funcional</h3>
+                <a href="#treino" class="servico-link">SAIBA MAIS</a>
+              </div>
+              <div class="servico-item">
+                <img src="./media/images/Massoterapia.png" alt="Massoterapia" />
+                <h3 class="servico-nome">Massoterapia</h3>
+                <a href="#massoterapia" class="servico-link">SAIBA MAIS</a>
+              </div>
+              <div class="servico-item">
+                <img src="./media/images/Osteopatia.png" alt="Osteopatia" />
+                <h3 class="servico-nome">Osteopatia</h3>
+                <a href="#osteopatia" class="servico-link">SAIBA MAIS</a>
+              </div>
+              <div class="servico-item">
+                <img src="./media/images/Fisioterapia.png" alt="Fisioterapia" />
+                <h3 class="servico-nome">Fisioterapia</h3>
+                <a href="#fisioterapia" class="servico-link">SAIBA MAIS</a>
+              </div>
+              <div class="servico-item">
+                <img src="./media/images/RPG.png" alt="RPG" />
+                <h3 class="servico-nome">RPG</h3>
+                <a href="#rpg" class="servico-link">SAIBA MAIS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="./js/slider.js"></script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/servicos-slider.js"></script>
     </div>
   </body>
 </html>

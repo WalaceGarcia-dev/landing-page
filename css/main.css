@@ -1,0 +1,27 @@
+/* ========================================
+   MAIN CSS - Agregador de Estilos Modulares
+   ======================================== */
+
+/* Importar todos os estilos modulares das seções */
+@import url('sections/slider.css');
+@import url('sections/sobre-nos.css');
+@import url('sections/especialidades.css');
+@import url('sections/servico-individual.css');
+@import url('sections/testimonials.css');
+@import url('sections/galeria.css');
+@import url('sections/artigos.css');
+
+/*
+   Este arquivo centraliza a importação de todos os arquivos CSS modulares.
+
+   VANTAGENS:
+   - Uma única linha no HTML: <link rel="stylesheet" href="css/main.css">
+   - Ordem consistente de carregamento
+   - Facilita adicionar/remover seções
+
+   Para usar este arquivo, substitua no HTML:
+
+   <link rel="stylesheet" href="css/main.css">
+
+   em lugar de múltiplos links para cada seção.
+*/

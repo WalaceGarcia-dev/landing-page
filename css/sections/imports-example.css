@@ -1,0 +1,25 @@
+/* ========================================
+   EXEMPLO DE IMPORTAÇÃO DOS ARQUIVOS CSS MODULARES
+   ======================================== */
+
+/* Importar todas as seções modulares */
+@import url('slider.css');
+@import url('sobre-nos.css');
+@import url('especialidades.css');
+@import url('servico-individual.css');
+@import url('testimonials.css');
+@import url('galeria.css');
+@import url('artigos.css');
+
+/*
+   Alternativa: Você pode copiar todos os @import acima para o seu style.css principal
+   ou criar um arquivo main.css separado que agregue todos esses imports.
+
+   VANTAGENS DA MODULARIZAÇÃO:
+   ✓ Código mais organizado e mantível
+   ✓ Fácil localizar estilos específicos de cada seção
+   ✓ Possibilita remover/adicionar seções facilmente
+   ✓ Facilita colaboração em equipe
+   ✓ Melhor performance ao remover/adicionar estilos não usados
+   ✓ Reutilização de componentes em outros projetos
+*/

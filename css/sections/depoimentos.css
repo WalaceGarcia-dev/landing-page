@@ -1,0 +1,144 @@
+/* ========================================
+   DEPOIMENTOS SECTION
+   ======================================== */
+
+.depoimentos {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #fffbf9;
+}
+
+.depoimentos-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.depoimentos h2 {
+  font-family: "DMSans-Light";
+  font-size: 12px;
+  color: #ae8a67;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.depoimentos h1 {
+  font-family: "MagnisaSans-ExtraLight";
+  font-size: 55px;
+  color: #1c4132;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.depoimentos-slider-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.depoimentos-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  min-height: 350px;
+}
+
+.slide-depoimento {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  text-align: center;
+  padding: 40px 80px;
+}
+
+.slide-depoimento.active {
+  display: block;
+  animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.depoimentos .quote-img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.depoimento-texto {
+  font-family: "DMSans-Regular";
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #1c4132;
+  line-height: 1.4;
+}
+
+.depoimento-autor {
+  text-align: center;
+  font-family: "DMSans-Regular";
+  font-size: 14px;
+  color: #1c4132;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.depoimentos-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 20px;
+}
+
+.depoimento-arrow {
+  background-color: #ae8a67;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  margin: 0 8px;
+}
+
+.depoimento-arrow svg {
+  width: 28px;
+  height: 28px;
+}
+
+.depoimento-arrow:hover {
+  background-color: #8f6e52;
+}
+
+.depoimento-arrow-left {
+  order: 1;
+}
+
+.depoimento-arrow-right {
+  order: 2;
+}

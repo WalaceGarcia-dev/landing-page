@@ -1,0 +1,75 @@
+/* ========================================
+   ESTILOS GLOBAIS E RESET
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c4132;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+/* ========================================
+   FONTES
+   ======================================== */
+
+@font-face {
+  font-family: "DMSans-ExtraLight";
+  src: url(../assets/fonts/DMSans_18pt-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-Light";
+  src: url(../assets/fonts/DMSans_18pt-Light.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url(../assets/fonts/DMSans_18pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-Medium";
+  src: url(../assets/fonts/DMSans_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-SemiBold";
+  src: url(../assets/fonts/DMSans_18pt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "DMSans-Bold";
+  src: url(../assets/fonts/DMSans_18pt-Bold.ttf);
+}
+
+@font-face {
+  font-family: "MagnisaSans-Medium";
+  src: url(../assets/fonts/MagnisaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "MagnisaSans-Regular";
+  src: url(../assets/fonts/MagnisaSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "MagnisaSans-Light";
+  src: url(../assets/fonts/MagnisaSans-Light.ttf);
+}
+
+@font-face {
+  font-family: "MagnisaSans-ExtraLight";
+  src: url(../assets/fonts/MagnisaSans-ExtraLight.ttf);
+}

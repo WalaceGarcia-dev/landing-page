@@ -1,5 +1,5 @@
 // Slider de Serviços
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
   const sliderGrid = document.querySelector('.servicos-grid');
   const dots = document.querySelectorAll('.servico-dot');
   const originalItems = document.querySelectorAll('.servico-item');
@@ -82,4 +82,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Inicializar
   updateSlider(false);
-});
+})();

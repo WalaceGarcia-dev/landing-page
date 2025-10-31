@@ -2,7 +2,116 @@
    RESPONSIVE DESIGN
    ======================================== */
 
-/* Tablets (768px - 1024px) */
+/* Tablets e Desktops Pequenos (769px - 1024px) - Menu hamburger */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Ativa menu hamburger para evitar encavalamento */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .header {
+    padding: 15px 30px;
+    justify-content: space-between;
+  }
+
+  .slide-title {
+    font-size: 40px;
+  }
+
+  .sobre-nos {
+    padding: 70px 40px;
+  }
+
+  .sobre-nos-title {
+    font-size: 40px;
+  }
+
+  /* Especialidades */
+  .servicos-container {
+    max-width: 720px;
+  }
+
+  .servicos-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .servico-item {
+    min-width: calc((720px - 40px) / 3);
+    width: calc((720px - 40px) / 3);
+  }
+
+  .servico-item img {
+    height: 220px;
+  }
+
+  /* Serviço Individual */
+  .servico-individual-container {
+    max-width: 720px;
+  }
+
+  .servico-individual-content {
+    gap: 20px;
+  }
+
+  .servico-individual-image {
+    width: 220px;
+    height: 300px;
+  }
+
+  .servico-individual-title {
+    font-size: 36px;
+  }
+
+  /* Depoimentos */
+  .depoimentos h1 {
+    font-size: 42px;
+  }
+
+  .depoimento-texto {
+    font-size: 24px;
+  }
+
+  /* Galeria */
+  .galeria-container {
+    max-width: 720px;
+  }
+
+  .bento-grid {
+    max-width: 720px;
+    transform: scale(0.9);
+  }
+
+  /* Artigos */
+  .artigos-container {
+    max-width: 720px;
+  }
+
+  .artigos-grid {
+    gap: 20px;
+  }
+
+  .artigo-video {
+    height: 180px;
+  }
+}
+
+/* Tablets (até 1024px) */
 @media (max-width: 1024px) {
   .header {
     padding: 15px 30px;
@@ -73,25 +182,72 @@
     width: calc((100% - 40px) / 3);
   }
 
-  /* Testimonials - Tablet */
-  .testimonials {
-    padding: 50px 30px;
+  /* Serviço Individual - Tablet */
+  .servico-individual {
+    padding: 70px 30px;
   }
 
-  .testimonials h1 {
+  .servico-individual-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .servico-individual-header .servicos-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .servico-individual-content {
+    gap: 25px;
+  }
+
+  .servico-individual-image {
+    width: 240px;
+    height: 330px;
+  }
+
+  .servico-individual-info {
+    max-width: 350px;
+  }
+
+  .servico-individual-title {
+    font-size: 38px;
+  }
+
+  .servico-individual-text h3 {
+    font-size: 11px;
+  }
+
+  .servico-individual-text p {
+    font-size: 13px;
+  }
+
+  .servico-arrow img {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Depoimentos - Tablet */
+  .depoimentos {
+    padding: 70px 30px;
+  }
+
+  .depoimentos h1 {
     font-size: 45px;
     margin-bottom: 50px;
   }
 
-  .testimonials h2 {
+  .depoimentos h2 {
     font-size: 11px;
   }
 
-  .testimonials .testimonials-txt {
+  .depoimento-texto {
     font-size: 26px;
   }
 
-  .slider-testimonials {
+  .slide-depoimento {
     padding: 30px 60px;
   }
 
@@ -150,6 +306,34 @@
     height: 284px;
     left: 506px;
     top: 37px;
+  }
+
+  /* Artigos & Entrevistas - Tablet */
+  .artigos-entrevistas {
+    padding: 70px 30px;
+  }
+
+  .artigos-entrevistas h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+
+  .artigos-grid {
+    gap: 25px;
+  }
+
+  .artigo-video {
+    height: 180px;
+  }
+
+  .play-button {
+    width: 55px;
+    height: 55px;
+    font-size: 22px;
+  }
+
+  .artigo-descricao {
+    font-size: 12px;
   }
 }
 
@@ -274,59 +458,127 @@
     font-size: 16px;
   }
 
-  /* Testimonials - Mobile */
-  .testimonials {
+  /* Serviço Individual - Mobile */
+  .servico-individual {
     padding: 60px 20px;
   }
 
-  .testimonials-container {
-    max-width: 100%;
+  .servico-individual-header {
+    margin-bottom: 40px;
   }
 
-  .testimonials h2 {
+  .servico-individual-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .servico-individual-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .servico-individual-image img {
+    object-position: center 20%;
+  }
+
+  .servico-slide:nth-child(2) .servico-individual-image img {
+    object-position: center 45%;
+  }
+
+  .servico-slide:nth-child(4) .servico-individual-image img {
+    object-position: center 10%;
+  }
+
+  .servico-individual-info {
+    max-width: 100%;
+    position: relative;
+    padding-right: 50px;
+  }
+
+  .servico-individual-title {
+    font-size: 32px;
+    position: relative;
+  }
+
+  .servico-individual-text h3 {
+    font-size: 10px;
+  }
+
+  .servico-individual-text p {
+    font-size: 13px;
+  }
+
+  .servico-slide {
+    position: relative;
+  }
+
+  .servico-arrow {
+    position: absolute;
+    right: 20px;
+    top: 315px;
+    transform: none;
+    animation: none;
+    z-index: 10;
+  }
+
+  .servico-arrow:hover {
+    transform: translateX(5px);
+  }
+
+  .servico-arrow img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Depoimentos - Mobile */
+  .depoimentos {
+    padding: 60px 20px;
+  }
+
+  .depoimentos h2 {
     font-size: 10px;
     margin-top: 0;
   }
 
-  .testimonials h1 {
+  .depoimentos h1 {
     font-size: 32px;
     margin-bottom: 40px;
   }
 
-  .testimonials-slider-wrapper {
+  .depoimentos-slider-wrapper {
     margin-top: 30px;
   }
 
-  .slider-testimonials {
+  .slide-depoimento {
     padding: 30px 20px;
   }
 
-  .testimonials .quote-img {
+  .depoimentos .quote-img {
     width: 35px;
     height: 35px;
   }
 
-  .testimonials .testimonials-txt {
+  .depoimento-texto {
     font-size: 20px;
     line-height: 1.4;
   }
 
-  .testimonials .testimonials-txt br {
+  .depoimento-texto br {
     display: none;
   }
 
-  .testimonials .testimonials-name {
+  .depoimento-autor {
     font-size: 12px;
     margin-top: 15px;
   }
 
-  .testimonials-arrow {
+  .depoimento-arrow {
     width: 32px;
     height: 32px;
     margin: 0 6px;
   }
 
-  .testimonials-arrow svg {
+  .depoimento-arrow svg {
     width: 24px;
     height: 24px;
   }
@@ -372,6 +624,43 @@
 
   .bento-item:last-child {
     margin-bottom: 0;
+  }
+
+  /* Artigos & Entrevistas - Mobile */
+  .artigos-entrevistas {
+    padding: 60px 20px;
+  }
+
+  .artigos-entrevistas h2 {
+    font-size: 10px;
+  }
+
+  .artigos-entrevistas h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .artigos-entrevistas h1 br {
+    display: none;
+  }
+
+  .artigos-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .artigo-video {
+    height: 220px;
+  }
+
+  .play-button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .artigo-descricao {
+    font-size: 14px;
   }
 }
 
@@ -471,54 +760,131 @@
     font-size: 9px;
   }
 
-  /* Testimonials - Small Mobile */
-  .testimonials {
+  /* Serviço Individual - Small Mobile */
+  .servico-individual {
     padding: 50px 15px;
   }
 
-  .testimonials h2 {
+  .servico-individual-header {
+    margin-bottom: 30px;
+  }
+
+  .servicos-title {
+    font-size: 24px;
+  }
+
+  .servicos-text {
+    font-size: 13px;
+  }
+
+  .btn-avaliacao {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+
+  .servico-individual-content {
+    gap: 25px;
+  }
+
+  .servico-individual-image {
+    height: 250px;
+  }
+
+  .servico-individual-image img {
+    object-position: center 20%;
+  }
+
+  .servico-slide:nth-child(2) .servico-individual-image img {
+    object-position: center 45%;
+  }
+
+  .servico-slide:nth-child(4) .servico-individual-image img {
+    object-position: center 10%;
+  }
+
+  .servico-individual-info {
+    padding-right: 45px;
+  }
+
+  .servico-individual-title {
+    font-size: 26px;
+  }
+
+  .servico-individual-text h3 {
     font-size: 9px;
   }
 
-  .testimonials h1 {
+  .servico-individual-text p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .servico-arrow {
+    position: absolute;
+    right: 15px;
+    top: 265px;
+    transform: none;
+    animation: none;
+    z-index: 10;
+  }
+
+  .servico-arrow:hover {
+    transform: translateX(5px);
+  }
+
+  .servico-arrow img {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Depoimentos - Small Mobile */
+  .depoimentos {
+    padding: 50px 15px;
+  }
+
+  .depoimentos h2 {
+    font-size: 9px;
+  }
+
+  .depoimentos h1 {
     font-size: 24px;
     margin-bottom: 30px;
   }
 
-  .testimonials-slider-wrapper {
+  .depoimentos-slider-wrapper {
     margin-top: 25px;
   }
 
-  .slider-testimonials {
+  .slide-depoimento {
     padding: 25px 15px;
   }
 
-  .testimonials .quote-img {
+  .depoimentos .quote-img {
     width: 30px;
     height: 30px;
     margin-bottom: 15px;
   }
 
-  .testimonials .testimonials-txt {
+  .depoimento-texto {
     font-size: 18px;
   }
 
-  .testimonials .testimonials-name {
+  .depoimento-autor {
     font-size: 11px;
     margin-top: 12px;
   }
 
-  .testimonials-navigation {
+  .depoimentos-navigation {
     margin-top: 15px;
   }
 
-  .testimonials-arrow {
+  .depoimento-arrow {
     width: 28px;
     height: 28px;
     margin: 0 5px;
   }
 
-  .testimonials-arrow svg {
+  .depoimento-arrow svg {
     width: 20px;
     height: 20px;
   }
@@ -566,4 +932,37 @@
   .bento-item:last-child {
     margin-bottom: 0;
   }
+
+  /* Artigos & Entrevistas - Small Mobile */
+  .artigos-entrevistas {
+    padding: 50px 15px;
+  }
+
+  .artigos-entrevistas h2 {
+    font-size: 9px;
+  }
+
+  .artigos-entrevistas h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .artigos-grid {
+    gap: 25px;
+  }
+
+  .artigo-video {
+    height: 200px;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .artigo-descricao {
+    font-size: 13px;
+  }
 }
+

@@ -1,0 +1,18 @@
+# Claude Code configuration
+.claude/
+
+# Node modules (if you add npm packages in the future)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Backup files
+*.backup

@@ -1,0 +1,114 @@
+/* ========================================
+   ARTIGOS & ENTREVISTAS SECTION
+   ======================================== */
+
+.artigos-entrevistas {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #f5ebe3;
+}
+
+.artigos-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.artigos-entrevistas h2 {
+  font-family: "DMSans-Light";
+  font-size: 12px;
+  color: #ae8a67;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.artigos-entrevistas h1 {
+  font-family: "MagnisaSans-ExtraLight";
+  font-size: 45px;
+  color: #1c4132;
+  text-align: left;
+  margin-bottom: 60px;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+
+.artigos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.artigo-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.artigo-video {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1c4132;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.artigo-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 65, 50, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: all;
+}
+
+.artigo-video:hover .video-overlay {
+  opacity: 0.7;
+}
+
+.play-button {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 246, 239, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #1c4132;
+  transition: transform 0.3s ease;
+}
+
+.artigo-video:hover .play-button {
+  transform: scale(1.1);
+}
+
+.artigo-descricao {
+  font-family: "DMSans-Regular";
+  font-size: 14px;
+  color: #1c4132;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+.artigo-descricao span {
+  font-family: "DMSans-Bold";
+}

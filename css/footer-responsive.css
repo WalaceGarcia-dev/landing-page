@@ -1,0 +1,104 @@
+/* ========================================
+   FOOTER RESPONSIVE
+   ======================================== */
+
+/* Tablet (até 1024px) */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 70px 30px 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 120px 1fr 1fr 1.5fr;
+    gap: 40px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+}
+
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-section h3 {
+    font-size: 12px;
+  }
+
+  .footer-links a {
+    font-size: 15px;
+  }
+
+  .footer-form h3 {
+    font-size: 18px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile (até 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 15px 25px;
+  }
+
+  .footer-content {
+    gap: 35px;
+    margin-bottom: 35px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .footer-section h3 {
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-form h3 {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .footer-copyright {
+    padding-top: 25px;
+  }
+
+  .footer-copyright p {
+    font-size: 11px;
+  }
+}

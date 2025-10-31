@@ -1,0 +1,150 @@
+/* ========================================
+   FOOTER SECTION
+   ======================================== */
+
+.footer {
+  background-color: #1c4132;
+  padding: 80px 20px 30px;
+  color: #ffffff;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 120px 180px 180px 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-section h3 {
+  font-family: "DMSans-SemiBold", sans-serif;
+  font-size: 11px;
+  color: #e6cfbe;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #e6cfbe;
+  text-decoration: none;
+  font-family: "DMSans-Regular", sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff6ef;
+}
+
+.footer-links img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Contact Form */
+.footer-form h3 {
+  font-family: "DMSans-ExtraLight", sans-serif;
+  font-size: 22px;
+  color: #e6cfbe;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f8ebe3;
+  color: #1c4132;
+  font-family: "DMSans-Regular", sans-serif;
+  font-size: 13px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a89382;
+  opacity: 0.8;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background-color: #ffffff;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.btn-enviar {
+  align-self: flex-end;
+  padding: 10px 30px;
+  background-color: #4a6d5f;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-family: "DMSans-Medium", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.btn-enviar:hover {
+  background-color: #5a7d6f;
+}
+
+/* Copyright */
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-copyright p {
+  font-family: "DMSans-Light", sans-serif;
+  font-size: 12px;
+  color: #e6cfbe;
+  opacity: 0.7;
+  margin: 0;
+}

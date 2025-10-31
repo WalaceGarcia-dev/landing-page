@@ -6,6 +6,7 @@
   if (!slider || !slides.length || !arrowButton) return;
 
   let currentSlide = 0;
+  let autoPlayInterval;
 
   function showSlide(index) {
     slides.forEach((slide) => {
@@ -19,6 +20,20 @@
     showSlide(currentSlide);
   }
 
-  arrowButton.addEventListener("click", nextSlide);
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(nextSlide, 5000);
+  }
+
+  function resetAutoPlay() {
+    clearInterval(autoPlayInterval);
+    startAutoPlay();
+  }
+
+  arrowButton.addEventListener("click", () => {
+    nextSlide();
+    resetAutoPlay();
+  });
+
   showSlide(currentSlide);
+  startAutoPlay();
 })();

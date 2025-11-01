@@ -342,6 +342,11 @@
   .header {
     padding: 15px 20px;
     justify-content: space-between;
+    transition: padding 0.3s ease;
+  }
+
+  .header.menu-open {
+    padding-top: 25px;
   }
 
   .menu-toggle {
@@ -364,12 +369,13 @@
   }
 
   .slider {
-    height: 100vh;
+    height: 45vh;
+    min-height: 350px;
   }
 
   .slider-dots {
-    bottom: 15px;
-    gap: 10px;
+    bottom: 12px;
+    gap: 8px;
   }
 
   .dot {
@@ -377,38 +383,67 @@
     height: 8px;
   }
 
+  .mobile-menu {
+    padding-top: 80px;
+  }
+
+  .mobile-menu-logo {
+    padding: 5px 20px 30px;
+  }
+
+  .mobile-menu-logo img {
+    max-width: 280px;
+  }
+
+  .mobile-menu-content {
+    gap: 20px;
+  }
+
   .mobile-link {
     font-size: 18px;
   }
 
+  .mobile-menu.active .mobile-link {
+    font-size: 22px;
+  }
+
+  .mobile-menu.active .mobile-btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
   .slide-title {
-    font-size: 32px;
-    margin-bottom: 25px;
+    font-size: 26px;
+    margin-bottom: 18px;
+    line-height: 1.3;
   }
 
   .btn-saiba-mais {
-    padding: 10px 20px;
-    font-size: 14px;
-    margin-top: 25px;
+    padding: 9px 18px;
+    font-size: 12px;
+    margin-top: 18px;
   }
 
   .sobre-nos {
-    padding: 60px 20px;
+    padding: 45px 20px;
   }
 
   .sobre-nos-label {
-    font-size: 12px;
-    margin-bottom: 30px;
+    font-size: 11px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
   }
 
   .sobre-nos-title {
-    font-size: 32px;
-    margin-bottom: 30px;
+    font-size: 28px;
+    margin-bottom: 25px;
+    line-height: 1.25;
   }
 
   .sobre-nos-text {
-    font-size: 15px;
-    margin-bottom: 40px;
+    font-size: 14px;
+    margin-bottom: 35px;
+    line-height: 1.7;
   }
 
   .sobre-nos-text br {
@@ -668,15 +703,25 @@
 @media (max-width: 480px) {
   .header {
     padding: 10px 15px;
+    transition: padding 0.3s ease;
+  }
+
+  .header.menu-open {
+    padding-top: 20px;
   }
 
   .logo {
     height: 35px;
   }
 
+  .slider {
+    height: 42vh;
+    min-height: 350px;
+  }
+
   .slider-dots {
     bottom: 10px;
-    gap: 8px;
+    gap: 7px;
   }
 
   .dot {
@@ -684,12 +729,28 @@
     height: 6px;
   }
 
+  .mobile-menu {
+    padding-top: 70px;
+  }
+
+  .mobile-menu-logo {
+    padding: 5px 15px 25px;
+  }
+
+  .mobile-menu-logo img {
+    max-width: 240px;
+  }
+
+  .mobile-menu-content {
+    gap: 18px;
+  }
+
   .mobile-link {
     font-size: 16px;
   }
 
-  .mobile-menu-content {
-    gap: 25px;
+  .mobile-menu.active .mobile-link {
+    font-size: 24px;
   }
 
   .mobile-btn {
@@ -697,27 +758,42 @@
     font-size: 14px;
   }
 
+  .mobile-menu.active .mobile-btn {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
+
   .slide-title {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 12px;
+    line-height: 1.3;
   }
 
   .btn-saiba-mais {
-    padding: 8px 18px;
-    font-size: 13px;
-    margin-top: 20px;
+    padding: 7px 15px;
+    font-size: 11px;
+    margin-top: 12px;
   }
 
   .sobre-nos {
-    padding: 50px 15px;
+    padding: 35px 15px;
+  }
+
+  .sobre-nos-label {
+    font-size: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2.5px;
   }
 
   .sobre-nos-title {
-    font-size: 26px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 1.25;
   }
 
   .sobre-nos-text {
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1.6;
   }
 
   .sobre-nos-scroll svg {
